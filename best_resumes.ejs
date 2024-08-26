@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Shortlister</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .pdf-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .pdf-list li {
+            margin: 10px 0;
+        }
+        .pdf-list a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .pdf-list a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Best Resumes</h1>
+    <ul class="pdf-list">
+        <% pdf_list.forEach(file => { %>
+            <li>
+                <a href="<%= file %>" target="_blank"><%= file %></a>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>
