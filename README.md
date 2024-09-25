@@ -22,7 +22,9 @@ If any problem exists then one could re-run the file mdg1.ipynb it would downloa
 
 # Links:
 The link for the trained model: https://drive.google.com/file/d/12rHegTksdRp-TkoWN0JiMFI_Y8-dno5b/view?usp=sharing
+<br>
 The link for the dataset: https://drive.google.com/file/d/1T1F86v45osU1PXQ3gS7MAIIlK_o7Tl8J/view?usp=drive_link
+
 
 
 
