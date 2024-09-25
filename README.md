@@ -20,6 +20,10 @@ Futhermore tfidf_vectorizer.pkl and label_encoder.pkl needs to be downloaded to 
 
 If any problem exists then one could re-run the file mdg1.ipynb it would download the required models in your system.
 
+# Links:
+The link for the trained model: https://drive.google.com/file/d/12rHegTksdRp-TkoWN0JiMFI_Y8-dno5b/view?usp=sharing
+The link for the dataset: https://drive.google.com/file/d/1T1F86v45osU1PXQ3gS7MAIIlK_o7Tl8J/view?usp=drive_link
+
 
 
 
