@@ -1,17 +1,21 @@
+require('dotenv').config();
 const express = require('express');
+const mongoose=require('mongoose');
 const UserRouter = require('./routes/user');
 const CandidateRouter = require("./routes/candidate");
 const CompanyRouter = require("./routes/company");
 const path=require("path");
 const { checkforauthcookie } = require('./middlewares/authentication');
 const cookieparser=require('cookie-parser');
-const {connectMongo}=require('./connections')
 
 
 const app=express();
-const port= 8000;
+const port= process.env.PORT;
 
-connectMongo('resume-test');
+mongoose
+    .connect(process.env.MONGO_URL)
+    .then(()=>console.log("Mongo DB Connected"))
+    .catch((err)=>console.log("Mongo connection Failed: ",err));
 
 app.set("view engine", "ejs");
 app.set("views", path.resolve("./views"));
